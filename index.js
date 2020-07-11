@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
     res.render("pages/home.ejs");
 });
 
-app.get("/getUser", (req, res) => {
+app.get("/users", (req, res) => {
     res.send(users);
 });
 
