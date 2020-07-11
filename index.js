@@ -23,7 +23,7 @@ app.get("/users", (req, res) => {
     res.send(users);
 });
 
-app.post("/users/filterByAddress/:address", (req, res) => {
+app.get("/users/filterByAddress/:address", (req, res) => {
     const { address } = req.params;
 
     const filterByAddress = users.filter(
